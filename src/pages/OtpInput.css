@@ -1,0 +1,108 @@
+/* OtpInputPage.css */
+.otp-page {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 10rem;
+}
+
+.otp-page h2 {
+  color: #000000;
+  text-align: center;
+}
+
+span {
+  display: flex;
+  color: #8D8D8D;
+  margin-bottom: 25px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.otp-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+
+
+.otp-page button {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 350px;
+  height: 53px;
+  cursor: pointer;
+}
+
+.otp-page button:hover {
+  background-color: #747373;
+}
+
+.otp-page {
+  text-align: center;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 30%;
+}
+
+.otp-box {
+  width: 45px; 
+  height: 60px;
+  margin: 0 5px; 
+  text-align: center; 
+  font-size: 32px; 
+  font-weight: 700;
+  color: #535353;
+  border: 4px solid #535353; 
+  border-radius: 15.5px; 
+  outline: none; 
+  cursor: pointer;
+}
+
+.otp-box:focus {
+  border-color: #000000; 
+}
+
+.dash-icon {
+  font-size: 50px;
+  margin: 0 8px;
+  color: #535353;
+  font-weight: 800;
+  width: 7%;
+  height: 9vh;
+}
+
+a {
+  text-decoration: underline;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .otp-box {
+    width: 30px; 
+    height: 45px;
+    margin: 0 5px; 
+    
+  }
+
+  .dash-icon {
+    font-size: 90px;
+    margin: 0 10px;
+    color: #535353;
+    font-weight: 800;
+    width: 15%;
+    height: 9vh;
+  }
+  
+}

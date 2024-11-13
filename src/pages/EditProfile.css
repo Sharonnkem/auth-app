@@ -1,0 +1,130 @@
+/* Edit Profile Page Styling */
+.edit-profile-page {
+  padding: 40px;
+  text-align: center;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.get {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+/* Profile Picture Styling */
+.profile-pic {
+  font-size: 80px;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 8rem;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.profile-pic:hover {
+  background-color: #747373;
+}
+
+/* Ellipsis Menu Styling */
+.ellipsis-menu {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Optional hover effect for ellipsis menu */
+.ellipsis-menu:hover {
+  color: #747373;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Form Fields Styling */
+.edit-profile-form {
+  margin-top: 20px;
+}
+
+/* Flexbox row to arrange two fields per row */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  gap: 10%;
+}
+
+/* Individual Input Group Styling */
+.input-group {
+  flex: 1; 
+  min-width: 200px; 
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: start;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-row ::placeholder {
+  font-size: small;
+}
+
+/* Save Changes Button Styling */
+.save-button {
+  background-color: #000000;
+  color: #ffffff;
+  width: 105%;
+  height: 53px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.save-button:hover {
+  background-color: #747373;
+}
+
+.mail {
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  font-size: 12px;
+  margin-right: 36px;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column; 
+    margin-bottom: 10px;
+  }
+
+  .input-group {
+    width: 100%;
+    margin-bottom: 10px; 
+  }
+
+.profile-pic {
+  width: 40%;
+}
+
+  .get {
+    width: 80%;
+}
+}

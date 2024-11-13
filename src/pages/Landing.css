@@ -1,0 +1,94 @@
+/* LandingPage.css */
+.landing-page {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.landing-page h2 {
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.landing-page button {
+  padding: 12px 20px;
+  background-color: #000000;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.landing-page button:hover {
+  background-color: #747373;
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.center p {
+  text-align: left;
+}
+
+.center ol {
+  text-align: start;
+}
+
+/* Profile Section: DP and Ellipsis Menu */
+.profile-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Profile Picture Styling */
+.profile-pic1 {
+  font-size: 80px;
+  color: #ccc;
+  margin-right: 20px;
+  padding-top: 5rem;
+}
+
+.profile-pic2 {
+  font-size: 80px;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 8rem;
+  cursor: pointer;
+  width: 10%;
+  border-radius: 50%;
+  height: 12vh;
+  border: 1px #000000;
+}
+
+/* Ellipsis Menu Styling */
+.ellipsis-menu {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Optional hover effect for ellipsis menu */
+.ellipsis-menu:hover {
+  color: #000000;
+}
+
+.mail {
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  margin-right: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
