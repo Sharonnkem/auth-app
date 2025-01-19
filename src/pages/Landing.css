@@ -88,3 +88,18 @@ p {
   font-size: 12px;
   font-weight: 500;
 }
+
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .center p {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .landing-page {
+    height: 150vh;
+  }
+}

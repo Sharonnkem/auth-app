@@ -103,7 +103,7 @@ const OtpInputPage = () => {
                 id={`otp-input-${index}`}
                 className="otp-box"
               />
-              {index === 2 && <FontAwesomeIcon icon={faMinus} className="dash-icon" />}
+              {index === 2 && <div className="dash-icon"> <FontAwesomeIcon icon={faMinus}  /> </div>}
             </React.Fragment>
           ))}
         </div>
