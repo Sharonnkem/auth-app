@@ -1,4 +1,3 @@
-// LoginPage.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
@@ -25,7 +24,6 @@ const LoginPage = () => {
         throw new Error(errorData.message || 'Failed to log in');
       }
 
-      // If login is successful, navigate to the OTP page and pass the email
       console.log('Logged in successfully:', email);
       navigate('/otp', { state: { email } }); 
     } catch (error) {

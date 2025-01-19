@@ -1,4 +1,3 @@
-// OtpInputPage.js
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,10 +10,8 @@ const OtpInputPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Retrieve the email from the location state
   const email = location.state?.email || 'unknown@example.com';
 
-  // Mask the email by replacing characters between the first 2 and domain with asterisks
   const maskedEmail = email;
 
   const handleOtpChange = (index, value) => {
@@ -23,7 +20,6 @@ const OtpInputPage = () => {
       newOtp[index] = value;
       setOtp(newOtp);
 
-      // Move focus to the next input field if a digit is entered
       if (value && index < 5) {
         document.getElementById(`otp-input-${index + 1}`).focus();
       }
@@ -48,22 +44,18 @@ const OtpInputPage = () => {
         throw new Error(errorData.message || 'Failed to verify OTP');
       }
   
-      // Log the response to check the structure
       const data = await response.json();
-      console.log('API response data:', data);  // Log the response for debugging
+      console.log('API response data:', data);  
   
-      // Extract the token from the 'data' property
-      const token = data.data;  // Access token within the 'data' object
+      const token = data.data;  
   
       if (token) {
-        // Save the token in localStorage
         localStorage.setItem('authToken', token);
         console.log('OTP verified and token saved:', token);
       } else {
         console.error('No token found in the response');
       }
   
-      // Navigate to the landing page with the masked email
       navigate('/landing', { state: { maskedEmail } });
   
     } catch (error) {

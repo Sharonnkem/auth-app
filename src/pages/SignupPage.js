@@ -1,4 +1,3 @@
-// SignUpPage.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './SignUp.css';
@@ -43,7 +42,6 @@ const SignUpPage = () => {
       console.error('Sign up failed:', error);
       setErrorMessage(error.message);
     }
-    // Navigate to OtpOutputPage and pass the email
   navigate('/otpout', { state: { email } });
   
   };

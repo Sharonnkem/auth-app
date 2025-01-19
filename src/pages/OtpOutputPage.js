@@ -10,11 +10,9 @@ const OtpOutputPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  /// Retrieve the email from the location state
   const email = location.state?.email || 'unknown@example.com';
 
 
-  // Mask the email by replacing characters between the first 2 and domain with asterisks
   const maskedEmail = email.replace(/^(.{2}).+(.{2}@.+)$/, '$1******$2');
 
   const handleOtpChange = (index, value) => {

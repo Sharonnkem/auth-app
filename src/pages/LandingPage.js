@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import {jwtDecode} from 'jwt-decode'; // Ensure correct import
+import {jwtDecode} from 'jwt-decode'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV, faUserCircle } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
 import './Landing.css';
+{/*import { useNavigate } from 'react-router-dom';*/}
+
 
 const LandingPage = () => {
-  const navigate = useNavigate();
+  {/*const navigate = useNavigate(); */}
   const [firstname, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [profilePicture, setProfilePicture] = useState(null);
@@ -34,23 +35,23 @@ const LandingPage = () => {
             }
 
             const userData = await response.json();
-            console.log('Fetched user data:', userData);  // Check the structure of the response
+            console.log('Fetched user data:', userData);  
 
-            // Check the structure and adjust the property names accordingly
+            
             if (userData && userData.data) {
               setFirstName(userData.data.firstName || 'User');
               setEmail(userData.data.email || 'unknown@example.com');
               setProfilePicture(userData.data.profilePicture || null);
             } else {
               console.log('User data does not contain expected fields:', userData);
-              // Optionally, set fallback values
+              
               setFirstName('User');
               setEmail('unknown@example.com');
             }
           } catch (error) {
             console.error('Error fetching user data:', error);
           } finally {
-            setLoading(false);  // Set loading to false when done
+            setLoading(false);  
           }
         };
 
@@ -103,7 +104,7 @@ const LandingPage = () => {
         </ol>
       </div>
 
-      <button onClick={() => navigate('/edit-profile', { state: { email } })}>Edit Profile</button>
+      {/*<button onClick={() => navigate('/edit-profile', { state: { email } })}>Edit Profile</button> */}
     </div>
   );
 };

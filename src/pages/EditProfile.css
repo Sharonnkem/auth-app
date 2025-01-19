@@ -1,4 +1,3 @@
-/* Edit Profile Page Styling */
 .edit-profile-page {
   padding: 40px;
   text-align: center;
@@ -12,7 +11,6 @@
 }
 
 
-/* Profile Picture Styling */
 .profile-pic {
   font-size: 80px;
   color: #000000;
@@ -27,14 +25,12 @@
   background-color: #747373;
 }
 
-/* Ellipsis Menu Styling */
 .ellipsis-menu {
   font-size: 24px;
   color: #333;
   cursor: pointer;
 }
 
-/* Optional hover effect for ellipsis menu */
 .ellipsis-menu:hover {
   color: #747373;
 }
@@ -47,12 +43,10 @@
   position: relative;
 }
 
-/* Form Fields Styling */
 .edit-profile-form {
   margin-top: 20px;
 }
 
-/* Flexbox row to arrange two fields per row */
 .input-row {
   display: flex;
   justify-content: space-between;
@@ -60,7 +54,6 @@
   gap: 10%;
 }
 
-/* Individual Input Group Styling */
 .input-group {
   flex: 1; 
   min-width: 200px; 
@@ -85,7 +78,6 @@
   font-size: small;
 }
 
-/* Save Changes Button Styling */
 .save-button {
   background-color: #000000;
   color: #ffffff;

@@ -18,7 +18,6 @@ const EditProfilePage = () => {
     console.log('Profile updated with:', { firstName, lastName, email, phoneNumber });
   };
 
-  // Handle profile image upload
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -27,14 +26,12 @@ const EditProfilePage = () => {
     }
   };
 
-  // Function to trigger hidden input click
   const triggerFileInput = () => {
     document.getElementById('fileInput').click();
   };
 
   return (
     <div className="edit-profile-page">
-      {/* Profile Picture and Ellipsis Menu */}
       <div className="header">
         <div className="profile-section">
           <div className='mail'>{maskedEmail}</div>
@@ -49,7 +46,6 @@ const EditProfilePage = () => {
           ) : (
             <FontAwesomeIcon icon={faUserEdit} className="profile-pic"  />
           )}
-          {/* Hidden file input */}
           <input 
             type="file" 
             id="fileInput"
@@ -108,7 +104,6 @@ const EditProfilePage = () => {
             </div>
           </div>
 
-          {/* Save Changes Button */}
           <button type="submit" className="save-button">Save Changes</button>
         </form>
       </div>

@@ -1,9 +1,9 @@
-/* OtpInputPage.css */
 .otp-page {
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
-  margin-top: 10rem;
+  padding-top: 10rem;
+  height: 90vh;
 }
 
 .otp-page h2 {

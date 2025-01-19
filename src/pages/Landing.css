@@ -1,9 +1,9 @@
-/* LandingPage.css */
 .landing-page {
   padding: 40px;
   background-color: #fff;
   border-radius: 8px;
   text-align: center;
+  height: 90vh;
 }
 
 .landing-page h2 {
@@ -43,7 +43,6 @@ p {
   text-align: start;
 }
 
-/* Profile Section: DP and Ellipsis Menu */
 .profile-section {
   display: flex;
   justify-content: flex-end;
@@ -52,7 +51,6 @@ p {
   position: relative;
 }
 
-/* Profile Picture Styling */
 .profile-pic1 {
   font-size: 80px;
   color: #ccc;
@@ -72,14 +70,12 @@ p {
   border: 1px #000000;
 }
 
-/* Ellipsis Menu Styling */
 .ellipsis-menu {
   font-size: 24px;
   color: #333;
   cursor: pointer;
 }
 
-/* Optional hover effect for ellipsis menu */
 .ellipsis-menu:hover {
   color: #000000;
 }
