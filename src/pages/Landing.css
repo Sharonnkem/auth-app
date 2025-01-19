@@ -95,6 +95,10 @@ p {
   .center p {
     text-align: center;
   }
+
+  .landing-page {
+    height: 90vh;
+  }
 }
 
 
