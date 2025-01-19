@@ -91,6 +91,12 @@ p {
 
 
 /* Responsive behavior for smaller screens */
+@media (max-width: 1200px) {
+  .landing-page {
+    height: 150vh;
+  }
+}
+
 @media (max-width: 768px) {
   .center p {
     text-align: center;
@@ -98,12 +104,5 @@ p {
 
   .landing-page {
     height: 90vh;
-  }
-}
-
-
-@media (max-width: 1200px) {
-  .landing-page {
-    height: 150vh;
   }
 }
