@@ -70,6 +70,14 @@ p {
   border: 1px #000000;
 }
 
+.profile-pic2 img {
+  width: 120px; 
+  height: 120px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  overflow: hidden; 
+}
+
 .ellipsis-menu {
   font-size: 24px;
   color: #333;
